@@ -1,0 +1,67 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 343px;
+  height: 680px;
+  background-color: #fff;
+  border-radius: 10px;
+  @include responsive(desktop) {
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &__picture {
+    width: 343px;
+    margin-bottom: 24px;
+    border-radius: 10px 10px 0 0;
+    @include responsive(desktop) {
+      width: 300px;
+      height: 450px;
+      border-radius: 10px 0 0 10px;
+      margin-bottom: 0;
+    }
+  }
+  &__info {
+    padding-inline: 24px;
+    @include responsive(desktop) {
+      padding-inline: 32px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+
+  &__button {
+    background-color: #3d8168;
+    padding: 15px 92px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    @include hover {
+      background-color: #1a4032;
+    }
+    @include responsive(desktop) {
+      padding: 15px 62px;
+    }
+
+    &--img {
+      width: 14px;
+      color: white;
+    }
+  }
+}
