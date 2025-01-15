@@ -1,36 +1,38 @@
-.medium_text {
-  font-family: 'Montserrat', serif;
-  font-size: 15px;
-  line-height: 23px;
-  color: #6c7289;
-}
+.text {
+  &-medium {
+    font-family: 'Montserrat', serif;
+    font-size: 15px;
+    line-height: 23px;
+    color: #6c7289;
+  }
 
-.bold_font {
-  font-family: 'Fraunces', serif;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 32px;
-  color: #1c232b;
-}
+  &-bold {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #1c232b;
+  }
 
-.price_font {
-  font-family: 'Fraunces', serif;
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 32px;
-  color: #3d8168;
+  &-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #3d8168;
+  }
 
-  &--discount {
+  &-discount {
     font-family: 'Montserrat', serif;
     font-size: 13px;
     line-height: 23px;
     color: #6c7289;
     text-decoration: line-through;
   }
-}
 
-.button_font {
-  font-size: 14px;
-  line-height: auto;
-  color: white;
+  &-button {
+    font-size: 14px;
+    line-height: auto;
+    color: white;
+  }
 }
